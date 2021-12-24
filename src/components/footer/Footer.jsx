@@ -1,5 +1,5 @@
-import React from 'react';
-import {Link} from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -10,31 +10,52 @@ function Footer() {
             <div className="col-lg-6 space-y-20">
               <div className="footer__logo">
                 <Link to="/">
-                  <img src={`img/logos/Logo.svg`} alt="logo" id="logo_js_f" />
+                  <img
+                    src={`img/logos/Logo.png`}
+                    alt="logo"
+                    id="logo_js_f"
+                    style={{ width: 40 }}
+                  />
                 </Link>
               </div>
               <p className="footer__text">
-                raroin is a shared liquidity NFT market smart contract
+                Markhormeta is a shared liquidity NFT market smart contract
               </p>
               <div>
                 <ul className="footer__social space-x-10 mb-40">
                   <li>
-                    <a href="https://www.facebook.com/" rel="noreferrer"  target="_blank">
+                    <a
+                      href="https://www.facebook.com/"
+                      rel="noreferrer"
+                      target="_blank"
+                    >
                       <i className="ri-facebook-line" />
                     </a>
                   </li>
                   <li>
-                    <a href="https://www.messenger.com/" rel="noreferrer"  target="_blank">
+                    <a
+                      href="https://www.messenger.com/"
+                      rel="noreferrer"
+                      target="_blank"
+                    >
                       <i className="ri-messenger-line" />
                     </a>
                   </li>
                   <li>
-                    <a href="https://whatsapp.com" target="_blank" rel="noreferrer" >
-                      <i className="ri-whatsapp-line"  />
+                    <a
+                      href="https://whatsapp.com"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <i className="ri-whatsapp-line" />
                     </a>
                   </li>
                   <li>
-                    <a href="https://youtube.com" target="_blank" rel="noreferrer" >
+                    <a
+                      href="https://youtube.com"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <i className="ri-youtube-line" />
                     </a>
                   </li>
@@ -42,7 +63,7 @@ function Footer() {
               </div>
             </div>
             <div className="col-lg-2 col-6">
-              <h6 className="footer__title">Raroin</h6>
+              <h6 className="footer__title"> Markhormeta</h6>
               <ul className="footer__list">
                 <li>
                   <Link to="home-1"> Home1 </Link>
@@ -94,7 +115,7 @@ function Footer() {
             </div>
           </div>
           <p className="copyright text-center">
-            Copyright © 2021. Created with love by creabik.
+            All Rights Reserved. Markhormeta. 2021
           </p>
         </div>
       </footer>

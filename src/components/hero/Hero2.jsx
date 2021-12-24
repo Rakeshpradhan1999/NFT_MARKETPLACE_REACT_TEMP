@@ -1,24 +1,24 @@
-import React from 'react';
-import {Link} from 'react-router-dom';
-import Countdown from 'react-countdown';
+import React from "react";
+import { Link } from "react-router-dom";
+import Countdown from "react-countdown";
 const CardItems = [
   {
-    img: '4',
-    price: '4.77',
+    img: "4",
+    price: "4.77",
   },
   {
-    img: '3',
-    price: '2.45',
+    img: "3",
+    price: "2.45",
   },
   {
-    img: '7',
-    price: '1.33',
+    img: "7",
+    price: "1.33",
   },
 ];
 // Random component
 const Completionist = () => <span>auction ending soon now!</span>;
 // Renderer callback with condition
-const renderer = ({hours, minutes, seconds, completed}) => {
+const renderer = ({ hours, minutes, seconds, completed }) => {
   if (completed) {
     // Render a complete state
     return <Completionist />;
@@ -39,9 +39,9 @@ function Hero2() {
           <div className="space-y-20">
             <h1 className="hero__title text-center">Discover digital assets</h1>
             <p className="hero__text text-center">
-              raroin is a shared liquidity NFT market smart contract which is
-              used by multiple websites to provide the users the best possible
-              experience.
+              Markhormeta is a shared liquidity NFT market smart contract which
+              is used by multiple websites to provide the users the best
+              possible experience.
             </p>
             <div className="space-x-20 d-flex justify-content-center">
               <Link className="btn btn-grad btn-md" to="marketplace">
@@ -65,7 +65,8 @@ function Hero2() {
                         </Link>
                         <div
                           className="details space-x-0 d-flex
-                                                justify-content-between">
+                                                justify-content-between"
+                        >
                           <div className="bid space-x-10">
                             <div className="icon d-none d-sm-block">
                               <svg
@@ -73,7 +74,8 @@ function Hero2() {
                                 height={43}
                                 viewBox="0 0 43 43"
                                 fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
                                 <path
                                   d="M28.3425
                                                                 0H14.4716C6.81083 0 0.600586
@@ -144,7 +146,8 @@ function Hero2() {
                                     gradientTransform="translate(22.7076)
                                                                                                 rotate(91.7322)
                                                                                                 scale(43.02
-                                                                                                41.6349)">
+                                                                                                41.6349)"
+                                  >
                                     <stop stopColor="#31E7FA" />
                                     <stop
                                       offset="0.526042"
@@ -158,12 +161,14 @@ function Hero2() {
                             <div>
                               <p
                                 className="color_text txt_sm
-                                                                                                    txt">
+                                                                                                    txt"
+                              >
                                 CURRENT BID
                               </p>
                               <span
                                 className="txt_sm
-                                                                                                    _bold">
+                                                                                                    _bold"
+                              >
                                 {val.price}
                                 ETH
                               </span>
@@ -172,7 +177,8 @@ function Hero2() {
                           <div className="auction_end">
                             <p
                               className="color_text txt_sm
-                                                                                                txt">
+                                                                                                txt"
+                            >
                               AUCTION END
                             </p>
                             <div className="d-flex  justify-content-center align-items-center space-x-10 txt_sm _bold">

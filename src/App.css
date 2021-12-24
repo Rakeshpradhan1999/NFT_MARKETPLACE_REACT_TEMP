@@ -1,0 +1,76 @@
+.collections .collections_item,
+.card__item {
+  background-color: #062350;
+}
+.card__item *,
+.collections * {
+  color: white;
+}
+.card__item .card_title a {
+  color: #fff;
+}
+.collections .collections_footer .collection_title a {
+  color: white;
+}
+.logos__wrap {
+  backdrop-filter: blur(25px) saturate(200%);
+  -webkit-backdrop-filter: blur(25px) saturate(200%);
+  background-color: rgba(6, 35, 80, 0.5);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.header__1 {
+  background-color: transparent;
+  color: white;
+  border-bottom: 0;
+  margin-bottom: 50px;
+}
+.header__1 a {
+  color: white;
+}
+.btn-primary {
+  background-color: #d19623 !important;
+}
+.footer__1 {
+  background-color: #030813;
+}
+.footer__1 .footer__list li a {
+  color: rgb(212, 211, 211);
+}
+.creator_card {
+  backdrop-filter: blur(25px) saturate(200%);
+  -webkit-backdrop-filter: blur(25px) saturate(200%);
+  background-color: rgba(6, 35, 80, 0.5);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+.creator_card * {
+  color: white;
+}
+.card__item.three .card_head .likes,
+.card__item.four .card_head .likes {
+  background-color: rgba(6, 35, 80, 0.8);
+}
+
+.btn-grad {
+  background-color: #d19623 !important;
+  background: none;
+}
+.btn-dark {
+  background-color: #d19623 !important;
+}
+.btn-white {
+  background-color: #d19623 !important;
+  color: white;
+}
+.section__artists .slick-next,
+.section__artists .slick-prev {
+  background-color: #d19623 !important;
+  border: none;
+  color: white;
+}
+
+.section__artists .slick-next::before {
+  color: white;
+}

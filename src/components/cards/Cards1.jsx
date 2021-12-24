@@ -1,96 +1,96 @@
-import React, {useRef} from 'react';
-import {Link} from 'react-router-dom';
-import Popup from 'reactjs-popup';
-import 'reactjs-popup/dist/index.css';
+import React, { useRef } from "react";
+import { Link } from "react-router-dom";
+import Popup from "reactjs-popup";
+import "reactjs-popup/dist/index.css";
 
 const CardItems = [
   {
-    avatar_img1: '1',
-    avatar_name1: 'mickel_fenn',
-    avatar_img2: '2',
-    avatar_name2: 'danil_pannini',
-    likes: '1.2',
-    img: '1',
-    title: 'Colorful Abstract Painting',
-    price: '2.45',
-    stock: '4',
+    avatar_img1: "1",
+    avatar_name1: "mickel_fenn",
+    avatar_img2: "2",
+    avatar_name2: "danil_pannini",
+    likes: "1.2",
+    img: "1",
+    title: "Colorful Abstract Painting",
+    price: "2.45",
+    stock: "4",
   },
   {
-    avatar_img1: '3',
-    avatar_name1: 'mazanov_sky',
-    avatar_img2: '4',
-    avatar_name2: 'mucky_fennouni',
-    likes: '13.2',
-    img: '2',
-    title: 'The girl with the firefly',
-    price: '2.55',
-    stock: '12',
+    avatar_img1: "3",
+    avatar_name1: "mazanov_sky",
+    avatar_img2: "4",
+    avatar_name2: "mucky_fennouni",
+    likes: "13.2",
+    img: "2",
+    title: "The girl with the firefly",
+    price: "2.55",
+    stock: "12",
   },
   {
-    avatar_img1: '5',
-    avatar_name1: 'jimmy_dom',
-    avatar_img2: '6',
-    avatar_name2: 'kristian_sefroui',
-    likes: '1.2',
-    img: '3',
-    title: 'Dodo hide the seek',
-    price: '2.45',
-    stock: '6',
+    avatar_img1: "5",
+    avatar_name1: "jimmy_dom",
+    avatar_img2: "6",
+    avatar_name2: "kristian_sefroui",
+    likes: "1.2",
+    img: "3",
+    title: "Dodo hide the seek",
+    price: "2.45",
+    stock: "6",
   },
   {
-    avatar_img1: '1',
-    avatar_name1: 'Alvin_nov',
-    avatar_img2: '7',
-    avatar_name2: 'mucky_holiman',
-    likes: '4.1',
-    img: '4',
-    title: 'Liquid Forest Princess',
-    price: '0.55',
-    stock: '34',
+    avatar_img1: "1",
+    avatar_name1: "Alvin_nov",
+    avatar_img2: "7",
+    avatar_name2: "mucky_holiman",
+    likes: "4.1",
+    img: "4",
+    title: "Liquid Forest Princess",
+    price: "0.55",
+    stock: "34",
   },
   {
-    avatar_img1: '8',
-    avatar_name1: 'stivan_rominok',
-    avatar_img2: '9',
-    avatar_name2: 'danil_pan',
-    likes: '6.4',
-    img: '5',
-    title: 'Spider Eyes Modern Art',
-    price: '1.45',
-    stock: '7',
+    avatar_img1: "8",
+    avatar_name1: "stivan_rominok",
+    avatar_img2: "9",
+    avatar_name2: "danil_pan",
+    likes: "6.4",
+    img: "5",
+    title: "Spider Eyes Modern Art",
+    price: "1.45",
+    stock: "7",
   },
   {
-    avatar_img1: '10',
-    avatar_name1: 'mazanov_sky',
-    avatar_img2: '11',
-    avatar_name2: 'mucky_art',
-    likes: '13.2',
-    img: '6',
-    title: 'Synthwave Painting',
-    price: '0.055',
-    stock: '2',
+    avatar_img1: "10",
+    avatar_name1: "mazanov_sky",
+    avatar_img2: "11",
+    avatar_name2: "mucky_art",
+    likes: "13.2",
+    img: "6",
+    title: "Synthwave Painting",
+    price: "0.055",
+    stock: "2",
   },
   {
-    avatar_img1: '12',
-    avatar_name1: 'jimmy_dom',
-    avatar_img2: '5',
-    avatar_name2: 'kristian_fel',
-    likes: '1.6',
-    img: '7',
-    title: 'Contemporary Abstract',
-    price: '0.95',
-    stock: '34',
+    avatar_img1: "12",
+    avatar_name1: "jimmy_dom",
+    avatar_img2: "5",
+    avatar_name2: "kristian_fel",
+    likes: "1.6",
+    img: "7",
+    title: "Contemporary Abstract",
+    price: "0.95",
+    stock: "34",
   },
   {
-    avatar_img1: '13',
-    avatar_name1: 'Alvin_nov',
-    avatar_img2: '14',
-    avatar_name2: 'mucky_art',
-    likes: '11.5',
-    img: '8',
-    title: 'Valkyrie Abstract Art',
-    price: '3.55',
-    stock: '9',
+    avatar_img1: "13",
+    avatar_name1: "Alvin_nov",
+    avatar_img2: "14",
+    avatar_name2: "mucky_art",
+    likes: "11.5",
+    img: "8",
+    title: "Valkyrie Abstract Art",
+    price: "3.55",
+    stock: "9",
   },
 ];
 
@@ -105,10 +105,13 @@ const Cards1 = () => {
             className="d-flex
 				space-x-20
 				justify-content-between
-				align-items-center">
+				align-items-center"
+          >
             <h2 className="section__title text-center">Explore</h2>
-            <Link to="/marketplace" className="btn btn-sm btn-dark"> view all </Link>
-
+            <Link to="/marketplace" className="btn btn-sm btn-dark">
+              {" "}
+              view all{" "}
+            </Link>
           </div>
         </div>
         <div className="row">
@@ -147,8 +150,8 @@ const Cards1 = () => {
                       </Link>
                     </div>
                   </div>
-                  <div  className="card_head">
-                    <img src={`img/items/item_${val.img}.png`} alt="nftimage" />
+                  <div className="card_head">
+                    <img src={`img/items/item.png`} alt="nftimage" />
                     <div className="likes space-x-3">
                       <i className="ri-heart-3-fill" />
                       <span className="txt_sm">{val.likes}k</span>
@@ -165,23 +168,25 @@ const Cards1 = () => {
                       <div className="creators">
                         <p className="txt_sm">{val.stock} in stock</p>
                       </div>
-                        <div className="txt_sm">
-                          Price: {" "}
-                          <span className="color_green txt_sm">
-                            {val.price}
-                            ETH
-                          </span>
-                        </div>
+                      <div className="txt_sm">
+                        Price:{" "}
+                        <span className="color_green txt_sm">
+                          {val.price}
+                          ETH
+                        </span>
+                      </div>
                     </div>
                     <div className="hr" />
                     <div
                       className="d-flex
 								align-items-center
 								space-x-10
-								justify-content-between">
+								justify-content-between"
+                    >
                       <div
                         className="d-flex align-items-center
-									space-x-5">
+									space-x-5"
+                      >
                         <i className="ri-history-line" />
                         <Popup
                           className="custom"
@@ -190,26 +195,30 @@ const Cards1 = () => {
                             <button className="popup_btn">
                               <p
                                 className="color_text txt_sm view_history"
-                                style={{width: 'auto'}}>
+                                style={{ width: "auto" }}
+                              >
                                 View History
                               </p>
                             </button>
                           }
-                          position="bottom center">
+                          position="bottom center"
+                        >
                           <div>
                             <div
                               className="popup"
                               id="popup_bid"
                               tabIndex={-1}
                               role="dialog"
-                              aria-hidden="true">
+                              aria-hidden="true"
+                            >
                               <div>
                                 <button
                                   type="button"
                                   className="button close"
                                   data-dismiss="modal"
                                   aria-label="Close"
-                                  onClick={closeTooltip}>
+                                  onClick={closeTooltip}
+                                >
                                   <span aria-hidden="true">×</span>
                                 </button>
                                 <div className="space-y-20">
@@ -241,7 +250,8 @@ const Cards1 = () => {
                                           <Link
                                             className="color_black txt
 						_bold"
-                                            to="profile">
+                                            to="profile"
+                                          >
                                             ayoub
                                           </Link>
                                         </p>
@@ -278,7 +288,8 @@ const Cards1 = () => {
                                           <Link
                                             className="color_black txt
 						_bold"
-                                            to="profile">
+                                            to="profile"
+                                          >
                                             monir
                                           </Link>
                                         </p>
@@ -303,21 +314,24 @@ const Cards1 = () => {
                             Place Bid
                           </button>
                         }
-                        position="bottom center">
+                        position="bottom center"
+                      >
                         <div>
                           <div
                             className="popup"
                             id="popup_bid"
                             tabIndex={-1}
                             role="dialog"
-                            aria-hidden="true">
+                            aria-hidden="true"
+                          >
                             <div>
                               <button
                                 type="button"
                                 className="button close"
                                 data-dismiss="modal"
                                 aria-label="Close"
-                                onClick={closeTooltip}>
+                                onClick={closeTooltip}
+                              >
                                 <span aria-hidden="true">×</span>
                               </button>
                               <div className=" space-y-20">
@@ -369,21 +383,24 @@ const Cards1 = () => {
                                       Place a bid
                                     </button>
                                   }
-                                  position="bottom center">
+                                  position="bottom center"
+                                >
                                   <div>
                                     <div
                                       className="popup"
                                       id="popup_bid"
                                       tabIndex={-1}
                                       role="dialog"
-                                      aria-hidden="true">
+                                      aria-hidden="true"
+                                    >
                                       <div>
                                         <button
                                           type="button"
                                           className="button close"
                                           data-dismiss="modal"
                                           aria-label="Close"
-                                          onClick={closeTooltip}>
+                                          onClick={closeTooltip}
+                                        >
                                           <span aria-hidden="true">×</span>
                                         </button>
                                         <div className="space-y-20">
@@ -394,14 +411,16 @@ const Cards1 = () => {
                                             your bid
                                             <span
                                               className="color_text txt
-      _bold">
+      _bold"
+                                            >
                                               (16ETH)
                                             </span>
                                             has been listing to our database
                                           </p>
                                           <Link
                                             to="#"
-                                            className="btn btn-dark w-full">
+                                            className="btn btn-dark w-full"
+                                          >
                                             Watch the listings
                                           </Link>
                                         </div>

@@ -1,7 +1,7 @@
 import "./assets/css/plugins/bootstrap.min.css";
-import 'remixicon/fonts/remixicon.css'
+import "remixicon/fonts/remixicon.css";
 import "./assets/scss/style.scss";
-
+import "./App.css";
 
 import Router from "./Router/routes";
 function App() {

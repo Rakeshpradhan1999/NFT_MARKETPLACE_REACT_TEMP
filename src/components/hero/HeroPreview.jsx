@@ -1,6 +1,6 @@
-import React from 'react';
-import {Link} from 'react-router-dom';
-import {HashLink} from 'react-router-hash-link';
+import React from "react";
+import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const HeroPreview = () => {
   return (
@@ -23,17 +23,19 @@ const HeroPreview = () => {
                 React Template for NFT Marketplace
               </h1>
               <p className="hero__text txt">
-                Raroin is a NFT Marketplace Platform template . It’s come with a
-                creative design, home page options, different explore and
+                Markhormeta is a NFT Marketplace Platform template . It’s come
+                with a creative design, home page options, different explore and
                 digital asset pages and items.
               </p>
               <div
                 className="sm:space-x-0 space-x-20 d-flex flex-column flex-md-row
-                  sm:space-y-20">
+                  sm:space-y-20"
+              >
                 <HashLink
                   className="btn btn-primary"
                   to="#Demos"
-                  scroll={(el) => el.scrollIntoView({block: 'start'})}>
+                  scroll={(el) => el.scrollIntoView({ block: "start" })}
+                >
                   View Demos
                 </HashLink>
                 <Link className="btn btn-white" to="/">
@@ -52,7 +54,8 @@ const HeroPreview = () => {
                   <p>Rating:</p>
                   <div
                     className="stars d-flex justify-content-center"
-                    style={{color: '#FFC700'}}>
+                    style={{ color: "#FFC700" }}
+                  >
                     <i className="ri-star-fill" />
                     <i className="ri-star-fill" />
                     <i className="ri-star-fill" />

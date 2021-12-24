@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const Changelog = () => {
   return (
@@ -14,14 +14,14 @@ const Changelog = () => {
                 </span>
               </div>
               <div className="box is__big">
-                <h2 className="text-center mb-40">Raroin Changelog</h2>
+                <h2 className="text-center mb-40"> Markhormeta Changelog</h2>
                 <div className="space-y-20">
                   <p className="text-center mb-20 color_brand">
                     V2.0.0
                     <span className="color_red">(BIG UPDATE) </span>
                   </p>
                   <div className="box change_log">
-                    <h6> Raroin Welcome page is now available</h6>
+                    <h6> Markhormeta Welcome page is now available</h6>
                     <span className="bage new">NEW</span>
                   </div>
                   <div className="box change_log">

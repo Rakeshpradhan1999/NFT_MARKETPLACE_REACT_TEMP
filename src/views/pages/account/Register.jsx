@@ -1,16 +1,16 @@
-import React from 'react';
-import {Link} from 'react-router-dom';
-import Header from '../../../components/header/Header';
-import useDocumentTitle from '../../../components/useDocumentTitle';
-import {ToastContainer, toast} from 'react-toastify';
+import React from "react";
+import { Link } from "react-router-dom";
+import Header from "../../../components/header/Header";
+import useDocumentTitle from "../../../components/useDocumentTitle";
+import { ToastContainer, toast } from "react-toastify";
 
-import 'react-toastify/dist/ReactToastify.css';
+import "react-toastify/dist/ReactToastify.css";
 
 const Register = () => {
-  useDocumentTitle(' Register');
-  const confirm = () => toast.success('Your email verified');
+  useDocumentTitle(" Register");
+  const confirm = () => toast.success("Your email verified");
   const update = () =>
-    toast.success(' you account has been registred check your inbox');
+    toast.success(" you account has been registred check your inbox");
   return (
     <div>
       <Header />
@@ -23,7 +23,10 @@ const Register = () => {
             <div className="col-lg-9">
               <div className="right_part space-y-20">
                 <h1 className="color_white"> Register new account</h1>
-                <p className="color_white" style={{color: 'white !important'}}>
+                <p
+                  className="color_white"
+                  style={{ color: "white !important" }}
+                >
                   You can set preferred display name, create your profile URL
                   and manage other personal settings.
                 </p>
@@ -76,7 +79,7 @@ const Register = () => {
                             <input
                               type="text"
                               className="form-control"
-                              placeholder="raroin.creabik.com/"
+                              placeholder=" Markhormeta.creabik.com/"
                             />
                           </div>
                           <div className="space-y-10">
@@ -95,7 +98,8 @@ const Register = () => {
                               <Link
                                 to="#"
                                 className="confirm-btn btn btn-dark btn-sm"
-                                onClick={confirm}>
+                                onClick={confirm}
+                              >
                                 Confirm
                               </Link>
                             </div>
@@ -103,9 +107,9 @@ const Register = () => {
                           <div className="space-y-10">
                             <span className="nameInput">Bio</span>
                             <textarea
-                              style={{minHeight: 110}}
+                              style={{ minHeight: 110 }}
                               placeholder="Add your bio"
-                              defaultValue={'\t\t\t\t\t\t\t\t\t\t\t'}
+                              defaultValue={"\t\t\t\t\t\t\t\t\t\t\t"}
                             />
                           </div>
                         </div>
@@ -124,7 +128,8 @@ const Register = () => {
                             />
                             <Link
                               className="facebook-btn btn btn-primary mt-10 btn-sm"
-                              to="#">
+                              to="#"
+                            >
                               <i className="ri-facebook-circle-fill" />
                               Connect to Facebook
                             </Link>
@@ -138,7 +143,8 @@ const Register = () => {
                             />
                             <Link
                               className="twitter-btn btn btn-primary mt-10 btn-sm"
-                              to="#">
+                              to="#"
+                            >
                               <i className="ri-twitter-fill" />
                               Connect to Twitter
                             </Link>
@@ -152,7 +158,8 @@ const Register = () => {
                             />
                             <Link
                               className="discord-btn btn btn-primary mt-10 btn-sm"
-                              to="#">
+                              to="#"
+                            >
                               <i className="ri-discord-fill" />
                               Connect to Discord
                             </Link>

@@ -1,10 +1,10 @@
-import React from 'react';
-import {Link} from 'react-router-dom';
-import useDocumentTitle from '../../../components/useDocumentTitle';
-import Header from '../../../components/header/Header';
+import React from "react";
+import { Link } from "react-router-dom";
+import useDocumentTitle from "../../../components/useDocumentTitle";
+import Header from "../../../components/header/Header";
 
 const Upload = () => {
-  useDocumentTitle(' Upload');
+  useDocumentTitle(" Upload");
   return (
     <div>
       <Header />
@@ -14,7 +14,8 @@ const Upload = () => {
             <Link
               to="upload-type"
               className="btn btn-white btn-sm
-                    switch">
+                    switch"
+            >
               Switch to Multiple
             </Link>
             <h1 className="title">Create single collectible</h1>
@@ -54,7 +55,7 @@ const Upload = () => {
                     <input
                       type="text"
                       className="form-control"
-                      placeholder="e. g. `raroin design art`"
+                      placeholder="e. g. ` Markhormeta design art`"
                     />
                   </div>
                   <div className="space-y-10">
@@ -65,14 +66,15 @@ const Upload = () => {
                     <input
                       type="text"
                       className="form-control"
-                      placeholder="e. g. `raroin design art`"
+                      placeholder="e. g. ` Markhormeta design art`"
                     />
                   </div>
                   <div className="space-y-10">
                     <span className="variationInput">Price</span>
                     <select
                       className="form-select custom-select"
-                      aria-label="Default select example">
+                      aria-label="Default select example"
+                    >
                       <option> 00.00 ETH</option>
                       <option>01.00 ETH</option>
                       <option>02.00 ETH</option>
@@ -90,7 +92,7 @@ const Upload = () => {
                         />
 
                         <span className="color_white ml-10">
-                          Raroin Collection
+                          Markhormeta Collection
                         </span>
                       </div>
                     </div>
@@ -118,7 +120,8 @@ const Upload = () => {
                 <Link
                   to="/upload-type"
                   className="btn btn-white
-						others_btn">
+						others_btn"
+                >
                   Cancel
                 </Link>
                 <Link to="#" className="btn btn-dark others_btn">
@@ -130,7 +133,8 @@ const Upload = () => {
               <Link
                 to="item-details"
                 className="btn btn-grad
-					btn_create">
+					btn_create"
+              >
                 Create item
               </Link>
             </div>

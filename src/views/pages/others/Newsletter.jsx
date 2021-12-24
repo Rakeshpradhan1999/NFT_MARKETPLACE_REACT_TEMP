@@ -1,15 +1,15 @@
-import React from 'react';
-import {Link} from 'react-router-dom';
-import Footer from '../../../components/footer/Footer';
-import Header from '../../../components/header/Header';
-import useDocumentTitle from '../../../components/useDocumentTitle';
-import {ToastContainer, toast} from 'react-toastify';
+import React from "react";
+import { Link } from "react-router-dom";
+import Footer from "../../../components/footer/Footer";
+import Header from "../../../components/header/Header";
+import useDocumentTitle from "../../../components/useDocumentTitle";
+import { ToastContainer, toast } from "react-toastify";
 
-import 'react-toastify/dist/ReactToastify.css';
+import "react-toastify/dist/ReactToastify.css";
 
 const Newsletter = () => {
-  useDocumentTitle(' Newsletter');
-  const sending = () => toast('you will receive daily updates');
+  useDocumentTitle(" Newsletter");
+  const sending = () => toast("you will receive daily updates");
 
   return (
     <div>
@@ -20,7 +20,7 @@ const Newsletter = () => {
             <div className="col-lg-6 left__side">
               <div className="content space-y-20">
                 <h1 className="hero__title">
-                  Sign up for The NFT, Raroin newsletter!
+                  Sign up for The NFT, Markhormeta newsletter!
                 </h1>
                 <p className="hero__desc">
                   Sign up to receive our monthly newsletter, featuring updates

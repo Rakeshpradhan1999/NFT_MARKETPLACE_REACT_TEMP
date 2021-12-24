@@ -1,15 +1,15 @@
-import React from 'react';
-import Footer from '../../../components/footer/Footer';
-import Header from '../../../components/header/Header';
-import useDocumentTitle from '../../../components/useDocumentTitle';
-import {Link} from 'react-router-dom';
-import {ToastContainer, toast} from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import React from "react";
+import Footer from "../../../components/footer/Footer";
+import Header from "../../../components/header/Header";
+import useDocumentTitle from "../../../components/useDocumentTitle";
+import { Link } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
-  const notify = () => toast.success('We have recieved your message');
+  const notify = () => toast.success("We have recieved your message");
 
-  useDocumentTitle(' Contact');
+  useDocumentTitle(" Contact");
   return (
     <div>
       <Header />
@@ -24,7 +24,7 @@ const Contact = () => {
             <div className="container">
               <div className="content__wrap space-y-20">
                 <div className="space-y-20">
-                  <h1 className="text-left">Hi, 🖐 we are Raroin.</h1>
+                  <h1 className="text-left">Hi, 🖐 we are Markhormeta.</h1>
                   <p className="contact__desc">
                     We’re here to help and answer any question you might have.
                     <br /> We look forward to hearing from you 🙂
@@ -48,7 +48,8 @@ const Contact = () => {
                             className="form-select
                                             custom-select"
                             aria-label="Default
-                                            select example">
+                                            select example"
+                          >
                             <option>United States</option>
                             <option>Finland</option>
                             <option>Norway</option>
@@ -70,7 +71,8 @@ const Contact = () => {
                             className="form-select
                                             custom-select"
                             aria-label="Default
-                                            select example">
+                                            select example"
+                          >
                             <option>Service Request</option>
                             <option>NFT items</option>
                             <option>Wallet</option>
@@ -83,10 +85,10 @@ const Contact = () => {
                         <div className="space-y-10">
                           <span className="nameInput">Message</span>
                           <textarea
-                            style={{minHeight: 110}}
+                            style={{ minHeight: 110 }}
                             className="mb-0"
                             defaultValue={
-                              '                                        '
+                              "                                        "
                             }
                           />
                         </div>

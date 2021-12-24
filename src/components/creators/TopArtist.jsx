@@ -1,8 +1,8 @@
-import React from 'react';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-import {Link} from 'react-router-dom';
+import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { Link } from "react-router-dom";
 
 export default function TopArtist() {
   const settings = {
@@ -50,29 +50,29 @@ export default function TopArtist() {
 
   const ArtistItems = [
     {
-      img: '1',
-      name: 'xander_hall',
-      price: '16.58',
+      img: "1",
+      name: "xander_hall",
+      price: "16.58",
     },
     {
-      img: '2',
-      name: 'hamza_pitts',
-      price: '14.55',
+      img: "2",
+      name: "hamza_pitts",
+      price: "14.55",
     },
     {
-      img: '3',
-      name: 'nathan_walls',
-      price: '24.13',
+      img: "3",
+      name: "nathan_walls",
+      price: "24.13",
     },
     {
-      img: '4',
-      name: 'kelton_collier',
-      price: '62.68',
+      img: "4",
+      name: "kelton_collier",
+      price: "62.68",
     },
     {
-      img: '5',
-      name: 'cade_glover',
-      price: '32.48',
+      img: "5",
+      name: "cade_glover",
+      price: "32.48",
     },
   ];
   return (
@@ -94,7 +94,7 @@ export default function TopArtist() {
                         </div>
                         <Link to="profile">
                           <img
-                            src={`img/avatars/avatar_${val.img}.png`}
+                            src={`img/avatars/avatar_1.png`}
                             alt="Avatar"
                             className="avatar avatar-md"
                           />

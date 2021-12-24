@@ -1,5 +1,5 @@
-import React from 'react';
-import {Link} from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
 const Hero1 = () => {
   return (
@@ -12,13 +12,14 @@ const Hero1 = () => {
                 Discover digital art and collect NFTs
               </h1>
               <p className="hero__text txt">
-                raroin is a shared liquidity NFT market smart contract which is
-                used by multiple websites to provide the users the best possible
-                experience.
+                Markhormeta is a shared liquidity NFT market smart contract
+                which is used by multiple websites to provide the users the best
+                possible experience.
               </p>
               <div
                 className="space-x-20 d-flex flex-column flex-md-row
-							sm:space-y-20">
+							sm:space-y-20"
+              >
                 <Link className="btn btn-primary" to="marketplace">
                   View market
                 </Link>

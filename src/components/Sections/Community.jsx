@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 function Community() {
   return (
@@ -7,9 +7,9 @@ function Community() {
         <div classname="section__head space-y-20">
           <h3 classname="section__title text-center">Global community</h3>
           <p classname="section__text text-center">
-            Learn more about raroin, chat with the team, other people in the
+            Learn more about , chat with the team, other people in the
             community, and express your opinion on the future development of
-            raroin.
+            Markhormeta.
           </p>
         </div>
         <div classname="community__items">

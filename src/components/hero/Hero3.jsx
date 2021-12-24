@@ -1,46 +1,46 @@
-import React, {useRef} from 'react';
-import {Link} from 'react-router-dom';
-import Countdown from 'react-countdown';
-import Popup from 'reactjs-popup';
-import 'reactjs-popup/dist/index.css';
+import React, { useRef } from "react";
+import { Link } from "react-router-dom";
+import Countdown from "react-countdown";
+import Popup from "reactjs-popup";
+import "reactjs-popup/dist/index.css";
 const CardItems1 = [
   {
-    img: '5',
-    title: 'Colorful Abstract Painting',
-    avatar_img1: '1',
-    avatar_img2: '2',
-    avatar_name: 'xander_hall',
-    price: '0,054',
+    img: "5",
+    title: "Colorful Abstract Painting",
+    avatar_img1: "1",
+    avatar_img2: "2",
+    avatar_name: "xander_hall",
+    price: "0,054",
   },
   {
-    img: '7',
-    title: 'Spider Eyes Modern Art ',
-    avatar_img1: '4',
-    avatar_img2: '3',
-    avatar_name: 'nathan_wall',
-    price: '0,006',
+    img: "7",
+    title: "Spider Eyes Modern Art ",
+    avatar_img1: "4",
+    avatar_img2: "3",
+    avatar_name: "nathan_wall",
+    price: "0,006",
   },
 ];
 const CardItems2 = [
   {
-    img: '6',
-    title: 'Colorful Abstract Painting',
-    avatar_img: '4',
-    avatar_name: 'krista_bryan',
-    price: '4,906',
+    img: "6",
+    title: "Colorful Abstract Painting",
+    avatar_img: "4",
+    avatar_name: "krista_bryan",
+    price: "4,906",
   },
   {
-    img: '5',
-    title: 'Synthwave Modern Painting',
-    avatar_img: '6',
-    avatar_name: 'makinzi_beck',
-    price: '3,003',
+    img: "5",
+    title: "Synthwave Modern Painting",
+    avatar_img: "6",
+    avatar_name: "makinzi_beck",
+    price: "3,003",
   },
 ];
 // Random component
 const Completionist = () => <span>auction ending soon now!</span>;
 // Renderer callback with condition
-const renderer = ({hours, minutes, seconds, completed}) => {
+const renderer = ({ hours, minutes, seconds, completed }) => {
   if (completed) {
     // Render a complete state
     return <Completionist />;
@@ -69,9 +69,9 @@ function Hero3() {
             </div>
             <div className="col-lg-6">
               <p className="hero__text color_black">
-                raroin is a shared liquidity NFT market smart contract which is
-                used by multiple websites to provide the users the best possible
-                experience.
+                Markhormeta is a shared liquidity NFT market smart contract
+                which is used by multiple websites to provide the users the best
+                possible experience.
               </p>
             </div>
           </div>
@@ -87,7 +87,8 @@ function Hero3() {
                         <div className="block_timer">
                           <div
                             className="d-flex justify-content-center
-                                                align-items-center txt_sm _bold box_counter">
+                                                align-items-center txt_sm _bold box_counter"
+                          >
                             <Countdown
                               date={Date.now() + 60000000}
                               renderer={renderer}
@@ -96,12 +97,13 @@ function Hero3() {
                         </div>
                         <div
                           className="details d-flex
-                                                justify-content-between">
+                                                justify-content-between"
+                        >
                           <div className="progress">
                             <div
                               className="progress-bar"
                               role="progressbar"
-                              style={{width: '80%'}}
+                              style={{ width: "80%" }}
                               aria-valuenow={80}
                               aria-valuemin={0}
                               aria-valuemax={100}
@@ -120,7 +122,8 @@ function Hero3() {
                         <Link
                           to="profile"
                           className="creators
-                                                space-x-10">
+                                                space-x-10"
+                        >
                           <div className="avatars -space-x-20">
                             <img
                               src={`img/avatars/avatar_${val.avatar_img1}.png`}
@@ -154,12 +157,13 @@ function Hero3() {
                         <img src={`img/items/item_${val.img}.png`} alt="prv" />
                         <div
                           className="details d-flex
-                                                justify-content-between">
+                                                justify-content-between"
+                        >
                           <div className="progress">
                             <div
                               className="progress-bar"
                               role="progressbar"
-                              style={{width: '80%'}}
+                              style={{ width: "80%" }}
                               aria-valuenow={80}
                               aria-valuemin={0}
                               aria-valuemax={100}
@@ -170,7 +174,8 @@ function Hero3() {
                       {/* ???? =============== */}
                       <div
                         className="d-flex flex-column
-                                            justify-content-center w-100 space-y-10">
+                                            justify-content-center w-100 space-y-10"
+                      >
                         <h6>
                           <Link className="color_black" to="item-details">
                             {val.title}
@@ -193,7 +198,8 @@ function Hero3() {
                           <div
                             className="d-flex
                                                     align-items-center space-x-10
-                                                    justify-content-between">
+                                                    justify-content-between"
+                          >
                             <Popup
                               className="custom"
                               ref={ref}
@@ -202,21 +208,24 @@ function Hero3() {
                                   Place Bid
                                 </button>
                               }
-                              position="bottom center">
+                              position="bottom center"
+                            >
                               <div>
                                 <div
                                   className="popup"
                                   id="popup_bid"
                                   tabIndex={-1}
                                   role="dialog"
-                                  aria-hidden="true">
+                                  aria-hidden="true"
+                                >
                                   <div>
                                     <button
                                       type="button"
                                       className="button close"
                                       data-dismiss="modal"
                                       aria-label="Close"
-                                      onClick={closeTooltip}>
+                                      onClick={closeTooltip}
+                                    >
                                       <span aria-hidden="true">×</span>
                                     </button>
                                     <div className=" space-y-20">
@@ -270,21 +279,24 @@ function Hero3() {
                                             Place a bid
                                           </button>
                                         }
-                                        position="bottom center">
+                                        position="bottom center"
+                                      >
                                         <div>
                                           <div
                                             className="popup"
                                             id="popup_bid"
                                             tabIndex={-1}
                                             role="dialog"
-                                            aria-hidden="true">
+                                            aria-hidden="true"
+                                          >
                                             <div>
                                               <button
                                                 type="button"
                                                 className="button close"
                                                 data-dismiss="modal"
                                                 aria-label="Close"
-                                                onClick={closeTooltip}>
+                                                onClick={closeTooltip}
+                                              >
                                                 <span aria-hidden="true">
                                                   ×
                                                 </span>
@@ -297,7 +309,8 @@ function Hero3() {
                                                   your bid
                                                   <span
                                                     className="color_text txt
-      _bold">
+      _bold"
+                                                  >
                                                     (16ETH)
                                                   </span>
                                                   has been listing to our
@@ -305,7 +318,8 @@ function Hero3() {
                                                 </p>
                                                 <Link
                                                   to="#"
-                                                  className="btn btn-dark w-full">
+                                                  className="btn btn-dark w-full"
+                                                >
                                                   Watch the listings
                                                 </Link>
                                               </div>
@@ -320,7 +334,8 @@ function Hero3() {
                             </Popup>
                             <span
                               className="color_green txt_xs
-                                                        text-right">
+                                                        text-right"
+                            >
                               {val.price} ETH
                             </span>
                           </div>
@@ -333,7 +348,8 @@ function Hero3() {
                   <Link
                     to="marketplace"
                     className="btn btn-md
-                                        btn-dark">
+                                        btn-dark"
+                  >
                     View all
                   </Link>
                 </div>

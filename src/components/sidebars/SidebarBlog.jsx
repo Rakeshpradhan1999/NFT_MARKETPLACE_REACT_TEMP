@@ -1,5 +1,5 @@
-import React from 'react';
-import {Link} from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 const SidebarBlog = () => {
   return (
     <div>
@@ -48,7 +48,8 @@ const SidebarBlog = () => {
             />
             <Link
               to="#"
-              className="btn w-100 btn-secondary sweep_letter sweep_top">
+              className="btn w-100 btn-secondary sweep_letter sweep_top"
+            >
               <div className="inside_item">
                 <span data-hover="Join with us!"> Join with us! </span>
               </div>
@@ -60,18 +61,10 @@ const SidebarBlog = () => {
           <h3 className="widget-title">Categories</h3>
           <div className="widget-wrap">
             <ul>
-              <li className="cat-item">
-               About us
-              </li>
-              <li className="cat-item">
-               Business
-              </li>
-              <li className="cat-item">
-               General
-              </li>
-              <li className="cat-item">
-               Knowledge Base
-              </li>
+              <li className="cat-item">About us</li>
+              <li className="cat-item">Business</li>
+              <li className="cat-item">General</li>
+              <li className="cat-item">Knowledge Base</li>
             </ul>
           </div>
         </div>
@@ -84,7 +77,7 @@ const SidebarBlog = () => {
                 NFT
               </Link>
               <Link rel="nofollow" to="#">
-                Raroin
+                Markhormeta
               </Link>
               <Link rel="nofollow" to="#">
                 btc

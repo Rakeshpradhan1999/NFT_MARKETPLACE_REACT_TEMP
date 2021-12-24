@@ -1,11 +1,11 @@
-import React from 'react';
-import Footer from '../../../components/footer/Footer';
-import Header from '../../../components/header/Header';
-import useDocumentTitle from '../../../components/useDocumentTitle';
-import {Link} from 'react-router-dom';
+import React from "react";
+import Footer from "../../../components/footer/Footer";
+import Header from "../../../components/header/Header";
+import useDocumentTitle from "../../../components/useDocumentTitle";
+import { Link } from "react-router-dom";
 
 const Chat = () => {
-  useDocumentTitle(' Chat ');
+  useDocumentTitle(" Chat ");
   return (
     <div>
       <Header />
@@ -184,7 +184,8 @@ const Chat = () => {
 														d-flex
 														align-items-center
 														space-x-5
-													">
+													"
+                              >
                                 <i className="ri-time-line" />
                                 <span>2 days ago</span>
                               </div>
@@ -211,9 +212,9 @@ const Chat = () => {
                           <div className="space-y-10">
                             <div className="box message_box">
                               <p>
-                                Raroin staff often requires a "transaction hash"
-                                from Etherscan or Polygonscan to troubleshoot
-                                support issues.
+                                Markhormeta staff often requires a "transaction
+                                hash" from Etherscan or Polygonscan to
+                                troubleshoot support issues.
                                 <br />
                                 Transaction hashes are unique IDs recording each
                                 transaction on the blockchain, this includes NFT
@@ -234,7 +235,8 @@ const Chat = () => {
 														d-flex
 														align-items-center
 														space-x-5
-													">
+													"
+                              >
                                 <i className="ri-time-line" />
                                 <span>2 days ago</span>
                               </div>
@@ -265,7 +267,8 @@ const Chat = () => {
 														d-flex
 														align-items-center
 														space-x-5
-													">
+													"
+                              >
                                 <i className="ri-time-line" />
                                 <span>2 days ago</span>
                               </div>
@@ -315,7 +318,8 @@ const Chat = () => {
 														d-flex
 														align-items-center
 														space-x-5
-													">
+													"
+                              >
                                 <i className="ri-time-line" />
                                 <span>2 days ago</span>
                               </div>
@@ -332,7 +336,8 @@ const Chat = () => {
 									justify-content-between
 									align-items-center
 									space-x-20
-								">
+								"
+                    >
                       <div className="inupt__message w-full">
                         <input
                           type="text"

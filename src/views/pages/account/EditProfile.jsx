@@ -1,23 +1,23 @@
-import React, {useRef} from 'react';
-import Footer from '../../../components/footer/Footer';
-import Header from '../../../components/header/Header';
-import HeroEditProfile from '../../../components/hero/HeroEditProfile';
-import useDocumentTitle from '../../../components/useDocumentTitle';
-import Popup from 'reactjs-popup';
-import 'reactjs-popup/dist/index.css';
-import {ToastContainer, toast} from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import React, { useRef } from "react";
+import Footer from "../../../components/footer/Footer";
+import Header from "../../../components/header/Header";
+import HeroEditProfile from "../../../components/hero/HeroEditProfile";
+import useDocumentTitle from "../../../components/useDocumentTitle";
+import Popup from "reactjs-popup";
+import "reactjs-popup/dist/index.css";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
-import {Link} from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const EditProfile = () => {
-  const deleting = () => toast.error('Avatar delete in progress');
-  const confirm = () => toast.success('Your email verified');
-  const update = () => toast.success('Your Profile updated');
+  const deleting = () => toast.error("Avatar delete in progress");
+  const confirm = () => toast.success("Your email verified");
+  const update = () => toast.success("Your Profile updated");
 
   const ref = useRef();
   const closeTooltip = () => ref.current.close();
-  useDocumentTitle(' Edit Profile');
+  useDocumentTitle(" Edit Profile");
   return (
     <div className="edit_profile">
       <Header />
@@ -36,7 +36,7 @@ const EditProfile = () => {
             <div className="space-x-10 d-flex">
               <div id="boxUpload">
                 <Link to="#" className="btn btn-dark">
-                  Upload  Photo
+                  Upload Photo
                 </Link>
                 <input
                   id="imageUpload"
@@ -87,7 +87,8 @@ const EditProfile = () => {
                         <Link
                           to="#"
                           className="confirm-btn btn btn-dark btn-sm"
-                          onClick={confirm}>
+                          onClick={confirm}
+                        >
                           Confirm
                         </Link>
                       </div>
@@ -97,15 +98,15 @@ const EditProfile = () => {
                       <input
                         type="text"
                         className="form-control"
-                        defaultValue="raroin.creabik.com/"
+                        defaultValue=" Markhormeta.com/"
                       />
                     </div>
                     <div className="space-y-10">
                       <span className="nameInput">Bio</span>
                       <textarea
-                        style={{minHeight: 110}}
+                        style={{ minHeight: 110 }}
                         placeholder="Add your bio"
-                        defaultValue={'\t\t\t\t\t\t\t\t\t'}
+                        defaultValue={"\t\t\t\t\t\t\t\t\t"}
                       />
                     </div>
                   </div>
@@ -124,7 +125,8 @@ const EditProfile = () => {
                       />
                       <Link
                         className="facebook-btn btn btn-primary mt-20 btn-sm"
-                        to="#">
+                        to="#"
+                      >
                         <i className="ri-facebook-circle-fill" />
                         Connect to Facebook
                       </Link>
@@ -138,7 +140,8 @@ const EditProfile = () => {
                       />
                       <Link
                         className="twitter-btn btn btn-primary mt-20 btn-sm"
-                        to="#">
+                        to="#"
+                      >
                         <i className="ri-twitter-fill" />
                         Connect to Twitter
                       </Link>
@@ -152,7 +155,8 @@ const EditProfile = () => {
                       />
                       <Link
                         className="discord-btn btn btn-primary mt-20 btn-sm"
-                        to="#">
+                        to="#"
+                      >
                         <i className="ri-discord-fill" />
                         Connect to Discord
                       </Link>
@@ -169,21 +173,24 @@ const EditProfile = () => {
                       Add more Social media
                     </button>
                   }
-                  position="bottom center">
+                  position="bottom center"
+                >
                   <div>
                     <div
                       className="popup"
                       id="popup_bid"
                       tabIndex={-1}
                       role="dialog"
-                      aria-hidden="true">
+                      aria-hidden="true"
+                    >
                       <div>
                         <button
                           type="button"
                           className="button close"
                           data-dismiss="modal"
                           aria-label="Close"
-                          onClick={closeTooltip}>
+                          onClick={closeTooltip}
+                        >
                           <span aria-hidden="true">×</span>
                         </button>
                         <div className="space-y-20">
@@ -198,7 +205,8 @@ const EditProfile = () => {
                             <Link
                               className="telegram-btn btn btn-primary mt-20
       btn-sm"
-                              to="#">
+                              to="#"
+                            >
                               <i className="ri-telegram-fill mr-5px" />
                               Connect to Telegram
                             </Link>
@@ -214,12 +222,13 @@ const EditProfile = () => {
                             <Link
                               className="tiktok-btn btn btn-primary mt-20
       btn-sm"
-                              to="#">
+                              to="#"
+                            >
                               <img
                                 className="mr-5px"
                                 src={`img/icons/tiktok.svg`}
                                 alt="tiktok"
-                                style={{height: 20}}
+                                style={{ height: 20 }}
                               />
                               Connect to TikTok
                             </Link>
@@ -234,7 +243,8 @@ const EditProfile = () => {
                             <Link
                               className="youtube-btn btn btn-primary mt-20
       btn-sm"
-                              to="#">
+                              to="#"
+                            >
                               <i className="ri-youtube-fill mr-5px" />
                               Connect to Youtube
                             </Link>
@@ -249,12 +259,13 @@ const EditProfile = () => {
                             <Link
                               className="medium-btn btn btn-primary mt-20
       btn-sm"
-                              to="#">
+                              to="#"
+                            >
                               <img
                                 className="mr-5px"
                                 src={`img/icons/medium.svg`}
                                 alt="tiktok"
-                                style={{height: 21}}
+                                style={{ height: 21 }}
                               />
                               Connect to Medium
                             </Link>
@@ -262,7 +273,8 @@ const EditProfile = () => {
                           <Link
                             className="discord-btn btn btn-primary
     w-100"
-                            to="#">
+                            to="#"
+                          >
                             Save
                           </Link>
                         </div>
